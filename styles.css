@@ -104,7 +104,7 @@ nav a {
   margin-bottom: 2rem;
 }
 
-.side1 p {
+.typewriter {
   font-size: 4rem;
   font-weight: 800;
   color: #fff;
@@ -112,6 +112,18 @@ nav a {
   text-align: left;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+  color: rgb(0, 183, 255);
+  border-radius: 1rem;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .side1 h5 {
@@ -151,6 +163,15 @@ nav a {
   font-weight: 400;
   font-family: Josefin Sans;
   cursor: pointer;
+}
+
+.side1 button a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
 }
 
 .side1 button:hover {
@@ -293,6 +314,8 @@ nav a {
   font-family: Roboto;
   background-color: rgb(8, 28, 53);
   width: 7rem;
+  /* transform-style: preserve-3d;
+  transition: transform 0.3 ease; */
   border-radius: 2rem;
 }
 
@@ -313,6 +336,7 @@ nav a {
   background-color: rgb(8, 28, 53);
   width: 7rem;
   border-radius: 2rem;
+  /* transform: rotateY(30deg) rotateX(10deg) scale(1.05); */
 }
 
 .second-box {
@@ -344,10 +368,11 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(80, 176, 255);
+  color: #50b0ff;
   border: 1px solid white;
   transition: 0.5s ease-in-out;
   padding: 3rem;
+  /* transform: rotateY(30deg) rotateX(10deg) scale(1.05); */
   scale: 1.05;
   box-shadow: 0 4px 8px rgba(0, 217, 255, 0.73);
   gap: 1rem;
@@ -386,9 +411,157 @@ nav a {
   scale: 1.05;
   box-shadow: 0 4px 8px rgba(0, 217, 255, 0.73);
   gap: 1rem;
+  /* transform: rotateY(30deg) rotateX(10deg) scale(1.05); */
   font-weight: 500;
   font-family: Roboto;
   background-color: rgb(8, 28, 53);
   width: 7rem;
   border-radius: 2rem;
+}
+
+.work-page {
+  background-color: rgb(1, 13, 31);
+  width: 100%;
+  height: 100lvh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.side5 {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.side5 h1 {
+  font-family: Roboto;
+  font-size: 3rem;
+  color: #00d0ff;
+  text-align: center;
+}
+
+.side5 .hr {
+  width: 6rem;
+  background-color: #ffffff;
+  height: 0.5rem;
+  margin-top: -1.5rem;
+  border-radius: 2rem;
+  border: 1px solid #00d0ff;
+  text-align: center;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  border: 1px solid white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+  background-color: rgb(2, 13, 77);
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.web1:hover {
+  scale: 1.05;
+  box-shadow: 0 4px 8px rgba(0, 217, 255, 0.73);
+  border-radius: 2rem;
+}
+
+.web1 img {
+  width: 100%;
+  /* border-radius: 1rem; */
+  object-fit: cover;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  gap: 4.5rem;
+  margin-top: -4rem;
+  align-items: center;
+}
+
+.pa1 {
+  margin-top: -1rem;
+}
+
+.pa1 h4 {
+  font-size: 1rem;
+  font-family: Ubuntu;
+  font-family: Josefin Sans;
+  border-radius: 1rem;
+  color: #00d0ff;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -1rem;
+}
+
+.pal2 a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pal2 {
+  background-color: #ffffff;
+  font-family: Josefin Sans;
+  border-radius: 1rem;
+  color: #000000;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.skil {
+  background-color: #c3c3c3;
+  border-radius: 0.4rem;
+  color: #000000;
+  font-family: Josefin Sans;
+  padding: 0.3rem;
+  font-size: 0.7rem;
 }
